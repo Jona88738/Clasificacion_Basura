@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body { min-height: 100vh; }
+#barra{
+
+    background:black;
+    height: 68px;
+}
+
+
+
+.opcion a{
+    text-decoration: none;
+    font-size: 2rem;
+    color:white
+}
+#cambiar-camara{
+    display: block;
+    position: relative;
+    left: 45%;
+    margin-bottom: 3%;
+}
+
+/* Estilo para celulares */
+@media (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    #canvas{
+
+        width: 80vw;
+        height: 475px;
+        position: relative;
+        left: 13%;
+    }
+
+    #logo{
+        width: 8rem;
+        position: absolute;
+        left: -32px;
+    }
+
+    .opcionesMenu{
+   
+        display: block;
+        text-align: end;
+        margin-right: 23%;
+    
+    }
+    
+    #titulo{
+        margin-top: 28px;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #resultado{
+        position: relative;
+        left: 45%;
+        display: inline;
+        font-size: 35px;
+        bottom: 9px;
+    }
+}
+
+
+
+@media (min-width: 769px) {
+    body {
+        background-color: lightgreen;
+    }
+
+    #canvas{
+        position: relative;
+        left: 35%;
+        height: 400px;
+        width: 400px;
+    }
+
+    #logo{
+        width: 9rem;
+        position: absolute;
+        left: -32px;
+    }
+
+    .opcionesMenu{
+   
+        display: block;
+        text-align: end;
+        margin-right: 42%;
+    
+    }
+
+    #titulo{
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #resultado{
+        position: relative;
+        left: 45%;
+        display: inline;
+        font-size: 35px;
+        bottom: 35px;
+    }
+}
+

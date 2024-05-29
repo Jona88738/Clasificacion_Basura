@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificacion de basura</title>
+    <link rel="stylesheet" type="text/css" href="./Css/style.css">
+
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          min-height: 100vh;
+      }
+      main {
+          flex: 1;
+      }
+      footer {
+          background: black;
+          color: white;
+          text-align: center;
+          padding: 1em 0;
+      }
+  </style>
+</head>
+<body>
+
+  <header id="barra">
+    <figure>
+      <img id="logo" src="./imagenes/logo_ceti.png" alt="3rem" >
+    </figure>
+    <nav class="menu">
+      <ul>
+        <li class="opcion"><a href="#" class="opcionesMenu">Internet de las cosas IOT</a></li>
+        
+      </ul>
+    </nav>
+  </header> 
+    
+  <main>
+<h1 id="titulo" >Clasificacion de basura</h1>
+
+     <video id="video" playsinline autoplay style="width: 1px;"></video>
+    <canvas id="canvas"   ></canvas>
+    <button class="btn btn-primary mb-2" id="cambiar-camara" style="width: 9rem;height: 2rem;border-radius: 32px;" onclick="cambiarCamara();">Cambiar camara</button>
+    <canvas id="othercanvas" width="150" height="150" style="display: none"></canvas>
+    <div id="resultado" ></div>  
+
+  </main>
+   
+
+  </body>
+ 
+  <footer style="background:black;"> 
+    <nav class="menu">
+    <ul>
+      <li class="opcion" ><a href="#"  style="text-align: end;">Jonathan Perez Arellano 20110324</a></li>
+      
+    </ul>
+  </nav>
+
+</footer>
+</html>
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+<script type="text/javascript" src="./Js/main.js"></script>
